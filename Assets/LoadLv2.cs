@@ -4,22 +4,11 @@ using UnityEngine;
 
 public class LoadLv2 : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-		}
-
-	void OnCollisionEnter (Collision col)
+	void OnTriggerEnter (Collider other)
 	{
-		if(col.gameObject.name == "FPSController")
+		if (other.gameObject.name == "Player")
 		{
 			Application.LoadLevel ("Test Demo 2");
 		}
 	}
-
-	}
+}
