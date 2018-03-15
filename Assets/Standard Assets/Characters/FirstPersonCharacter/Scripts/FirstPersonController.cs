@@ -42,6 +42,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+
         // Use this for initialization
         private void Start()
         {
@@ -81,6 +82,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
         }
 
 
@@ -156,7 +158,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_NextStep = m_StepCycle + m_StepInterval;
 
-            PlayFootStepAudio();
+			PlayFootStepAudio();
         }
 
 
